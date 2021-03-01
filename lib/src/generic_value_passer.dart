@@ -1,4 +1,4 @@
-part of basic_core;
+part of flutter_generic_widgets;
 
 class GenericValuePasser {
   String valueString;

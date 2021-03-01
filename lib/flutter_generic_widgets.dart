@@ -12,3 +12,4 @@ part './src/generic_data_row.dart';
 part './src/generic_form_textfield.dart';
 part './src/generic_network_error_view.dart';
 part './src/generic_usecase.dart';
+part './src/generic_value_passer.dart';
