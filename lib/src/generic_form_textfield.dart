@@ -197,8 +197,8 @@ class GenericFormTextField {
 
   String validator(String value, TextFieldType type) {
     if (type == TextFieldType.name) {
-      if (value.isEmpty || value.length < 5) {
-        return 'Please enter a valid Name with atleast 5 character';
+      if (value.isEmpty || value.length < 3) {
+        return 'Please enter a valid Name with atleast 3 character';
       }
     } else if (type == TextFieldType.password) {
       if (value.isEmpty) {
