@@ -147,7 +147,7 @@ class GenericFormTextField {
       validator: (String value) {
         return validatorFunc == null
             ? validator(value, validationType)
-            : validatorFunc;
+            : validatorFunc(value);
       },
       // inputFormatters: validationType == TextFieldType.number
       //     ? <TextInputFormatter>[
