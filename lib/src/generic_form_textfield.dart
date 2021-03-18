@@ -126,6 +126,7 @@ class GenericFormTextField {
   Widget textFormField(
       {TextInputType keyboardType,
       TextFieldType validationType,
+      Function validatorFunc,
       String labelText,
       String labelHint,
       String formName,
@@ -144,7 +145,9 @@ class GenericFormTextField {
       ),
       style: TextStyle(color: Colors.black),
       validator: (String value) {
-        return validator(value, validationType);
+        return validatorFunc == null
+            ? validator(value, validationType)
+            : validatorFunc;
       },
       // inputFormatters: validationType == TextFieldType.number
       //     ? <TextInputFormatter>[
