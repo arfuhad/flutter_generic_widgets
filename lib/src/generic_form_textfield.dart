@@ -158,7 +158,7 @@ class GenericFormTextField {
       onSaved: (String value) {
         if (validationType == TextFieldType.number) {
           formData[formName] = (value == null || value == "")
-              ? 0.toString()
+              ? (-1).toString()
               : num.parse(value).toString();
         } else {
           formData[formName] = value;
